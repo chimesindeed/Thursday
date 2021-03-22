@@ -2,9 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 root to: 'welcome#main'
 
-  
-  get 'main', :to => 'welcome#main', as: 'main'
-  get 'about', :to => 'welcome#about', as: 'about'
+  # get 'about', :to => 'welcome#about', as: 'about'
   
   resources :words
   resources :phrases
